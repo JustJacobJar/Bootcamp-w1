@@ -10,53 +10,77 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
   </head>
-  <body>
-    <h1>This is the main heading</h1>
-    <h2>This is a h2</h2>
-    <h3>This is a h3</h3>
-    <h4>This is a h4</h4>
-    <h5>This is a h5</h5>
-    <h6>This is a h6</h6>
-    <p>
-      This is a p tag for paragraph. These html tags will ususally have some
-      default prosing to differentiate them from one another
-    </p>
+  <body style="padding: 1rem">
+    <div class="main">
+      <h1>This is the main heading</h1>
+      <h2>This is a h2</h2>
+      <h3>This is a h3</h3>
+      <h4>This is a h4</h4>
+      <h5>This is a h5</h5>
+      <h6>This is a h6</h6>
+      <p>
+        This is a p tag for paragraph. These html tags will ususally have some
+        default prosing to differentiate them from one another
+      </p>
 
-    <img
-      width="200"
-      src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" />
-    <br />
-    <label
-      >This is using the lable tag, it usually describes an image or
-      element</label
-    >
-
-    <h2>What about forms and user input?</h2>
-    <form>
-      <h3>This is inside a form tag</h3>
-      <p>Here are just a few examples, however there are many many more input field types.</p>
-      <div>
-        <label>Input text field</label>
-        <input type="text" />
-      </div>
-      <div>
-        <label>Input number field</label>
-        <input type="number" />
-      </div>
+      <p>Hover Over me!</p>
+      <img
+        class="imgcard"
+        width="200"
+        src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" />
+      <br />
       <label
-        >This button does nothing, but it would usually submit the form.</label
+        >This is using the lable tag, it usually describes an image or
+        element</label
       >
-      <button>Submit</button>
-    </form>
 
-    <p>
-      If you read my code, you can see I used div tags to group elements. While
-      not nessessary without css, when I do introduce css it makes it much
-      easier to style the components
-    </p>
-    <p>
-      You can also do this: <b>Bold</b> <i>Italic</i> by using b and i tags
-      respectively
-    </p>
+      <h2>What about forms and user input?</h2>
+      <form style="display: flex; flex-direction: column; gap: 1rem">
+        <h3 style="text-align: center">This is inside a form tag</h3>
+        <p>
+          Here are just a few examples, however there are many many more input
+          field types.
+        </p>
+        <div class="input">
+          <label>Input text field</label>
+          <input type="text" />
+        </div>
+        <div class="input">
+          <label>Input number field</label>
+          <input type="number" />
+        </div>
+        <label
+          >This button does nothing, but it would usually submit the
+          form.</label
+        >
+        <button disabled>Submit</button>
+
+        <svg
+          style="align-self: center"
+          class="spin"
+          width="48"
+          height="48"
+          fill="#666"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 512 512">
+          <path
+            d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"></path>
+        </svg>
+        <label style="text-align: center; font-size: small; color: gray;"
+          >Loading spinner svg animated with css</label
+        >
+      </form>
+
+      <p>
+        If you read my code, you can see I used div tags to group elements.
+        While not nessessary without css, when I do introduce css it makes it
+        much easier to style the components
+      </p>
+      <p>
+        You can also do this: <b>Bold</b> <i>Italic</i> by using b and i tags
+        respectively
+      </p>
+    </div>
   </body>
 </html>
