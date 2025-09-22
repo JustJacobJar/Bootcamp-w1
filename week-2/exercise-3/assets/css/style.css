@@ -1,0 +1,134 @@
+/**
+ * Basic Page Styles
+ *
+ * @format
+ */
+
+:root {
+  --primary: #d90000;
+  --secondary: #fff3f3;
+  --bg: #fff;
+  --bg-content: #000;
+  /* Extra Options */
+  --box: 16px;
+  --border: 2px solid var(--primary);
+  --font-face: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Globals */
+  font-family: var(--font-face);
+}
+
+.dark {
+  --primary: #d90000;
+  --secondary: #252323;
+  --bg: #000;
+  --bg-content: #fff;
+}
+
+.custom {
+  --primary: #e47914;
+  --secondary: #fff2df;
+  --bg: #f5efeb;
+  --bg-content: #1e1320;
+  /* Extra Options */
+  --box: 8px;
+  --border: 4px dotted var(--primary);
+  --font-face: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-face);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  /* Hardcoded white */
+  color: var(--bg-content);
+  /* Hardcoded black */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: var(--primary);
+  /* Hardcoded red */
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--bg-content);
+  /* Hardcoded white */
+  font-weight: bold;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  background-color: var(--primary);
+  /* Hardcoded red */
+  color: var(--bg-content);
+  /* Hardcoded white */
+  padding: 40px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.header-image {
+  width: 100%;
+}
+
+/* Main Content */
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: var(--bg);
+  /* Hardcoded white */
+}
+
+img {
+  max-height: fit-content;
+  width: 100%;
+}
+
+.box {
+  width: 40%;
+  padding: 20px;
+  background-color: var(--secondary);
+  /* Light red background */
+  border: var(--border);
+  border-radius: var(--box);
+  /* Hardcoded red border */
+  color: var(--primary);
+  /* Hardcoded red text */
+  text-align: center;
+}
+
+.box h2 {
+  margin-top: 0;
+}
+
+.box p {
+  color: var(--bg-content);
+  /* Hardcoded black text */
+}
+
+a.option {
+  color: var(--primary);
+  /* Hardcoded red */
+  text-decoration: none;
+  width: 50%;
+}
