@@ -11,9 +11,9 @@ img {
   height: 200px;
   background-color: lightblue;
   /* Margin property */
-  margin: 24px;
+  margin: 20px;
   /* Padding property */
-  padding: 16px;
+  padding: 20px;
   /* Border property */
-  border: 8px solid darkblue;
+  border: 9px solid darkblue;
 }
