@@ -1,0 +1,41 @@
+/**
+ * Custom Styles for overriding Bootstrap colors
+ *
+ * @format
+ */
+
+
+/* Header styles */
+header h1 {
+    color: orange !important;
+    font-size: 6rem !important;
+    font-weight: bold !important;
+}
+
+header p.lead {
+    font-style: italic !important;
+    color: white !important;
+
+}
+
+.btn-primary, .btn-primary:hover {
+  background-color: orange important;
+  border-color: orange important;
+}
+
+.btn-secondary, .btn-secondary:hover {
+  background-color: purple important;
+  border-color: purple important;
+}
+
+.btn:hover{
+  filter: brightness(85%);
+}
+
+.text-dark{
+  background-color: lightblue !important;
+}
+
+.bg-secondary{
+  background-color: green !important;
+}
