@@ -1,0 +1,24 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      Right Click and click Inspect, then click on Console to see your output
+    </h1>
+    <div class="contain">
+      <h3>Input a number</h3>
+      <input id="numInput" type="number" />
+      <button id="numBtn" onclick="oddCheck(document.getElementById('numInput').value)">Check Odd or Even</button>
+      <p style="font-size: 1.5rem;">Your number is...</p>
+      <p id="numOut">???</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
