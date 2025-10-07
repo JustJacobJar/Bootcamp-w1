@@ -1,0 +1,35 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects and Arrays</title>
+  </head>
+  <body>
+    <form id="form">
+      <label>Name</label>
+      <input id="name" type="text" />
+      <label>Order</label>
+      <select id="type">
+        <option value="Flat White">Flat White</option>
+        <option value="Black">Black</option>
+        <option value="Latte">Latte</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Americano">Americano</option>
+        <option value="Wspresso">Espresso</option>
+        <option value="Mocha">Mocha</option>
+      </select>
+      <label>Milk</label>
+      <input id="milk" type="text" />
+      <button type="button" onclick="addOrder()">Submit</button>
+    </form>
+
+    <button type="button" onclick="printOrders()">Print Orders</button>
+
+    <h2>Orders</h2>
+    <ul id="orders"></ul>
+  </body>
+  <script src="script.js"></script>
+</html>
