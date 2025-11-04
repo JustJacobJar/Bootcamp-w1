@@ -1,4 +1,5 @@
-week-6/session-1/exercise-1/Include
-week-6/session-1/exercise-1/Lib
-week-6/session-1/exercise-1/Scripts
-week-6/session-1/exercise-1/pyvenv.cfg
+*/**/Include
+*/**/Lib
+*/**/Scripts
+*/**/pyvenv.cfg
+*/**/node_modules
